@@ -8,14 +8,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
-    private WebView mywebview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        mywebview = (WebView)findViewById(R.id.webView);
+        WebView mywebview = findViewById(R.id.webView);
         WebSettings webSettings = mywebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setUserAgentString("4emanager");
